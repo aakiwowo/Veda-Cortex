@@ -3,8 +3,78 @@ __v0_runtime_loader.js
 __v0_devtools.tsx
 __v0_jsx-dev-runtime.ts
 
-# Common ignores
-node_modules/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage
+*.lcov
+.nyc_output
+
+# Build outputs
 .next/
+out/
+dist/
+.nuxt/
+.svelte-kit/
+**/.vitepress/dist
+**/.vitepress/cache
+.vuepress/dist
+.docusaurus
+.serverless/
+.fusebox/
+build/Release
+
+# Dependency directories
+node_modules/
+bower_components/
+jspm_packages/
+web_modules/
+
+# Caches
+.cache/
+.parcel-cache
+.npm
+.eslintcache
+.stylelintcache
+.grunt
+lib-cov
+
+# dotenv environment variable files
+.env
+.env.*
+!.env.example
 .env*.local
+
+# OS files
 .DS_Store
+
+# Firebase cache
+.firebase/
+
+# yarn v3
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.yarn-integrity
+
+# TypeScript cache
+*.tsbuildinfo
