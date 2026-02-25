@@ -43,22 +43,28 @@ export const quizQuestions: QuizQuestion[] = [
     description: 'Think about the size of your curl or wave pattern.',
     options: [
       {
+        value: 'N',
+        label: 'Bone straight (no curl)',
+        description: 'Hair lies completely flat with no wave, curl, or coil pattern.',
+        image: '/BoneStraight.jpg',
+      },
+      {
         value: 'A',
         label: 'Loose / Large',
         description: 'Loose waves, big bouncy curls, or soft coils.',
-        image: '/images/quiz/curl-subtype-A-loose.svg',
+        image: '/loose:large.jpg',
       },
       {
         value: 'B',
         label: 'Medium / Defined',
         description: 'Medium waves, springy curls, or defined coils.',
-        image: '/images/quiz/curl-subtype-B-medium.svg',
+        image: '/mediumDefined.jpg',
       },
       {
         value: 'C',
         label: 'Tight / Small',
         description: 'Tight waves, corkscrew curls, or tight coils/kinks.',
-        image: '/images/quiz/curl-subtype-C-tight.svg',
+        image: '/tightSmall.jpg',
       },
     ],
   },
@@ -255,7 +261,11 @@ export function getHairType(
     '3': 'Curly',
     '4': 'Coily',
   }
-  return `${curlPattern}${curlSubtype} - ${typeMap[curlPattern] || 'Unknown'}`
+  const baseType = typeMap[curlPattern] || 'Unknown'
+  if (curlSubtype === 'N') {
+    return `${curlPattern} - ${baseType} (bone straight)`
+  }
+  return `${curlPattern}${curlSubtype} - ${baseType}`
 }
 
 export function getRoutineSteps(profile: HairProfile): RoutineStep[] {
