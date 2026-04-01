@@ -92,13 +92,13 @@ export function QuizPage() {
                 )}
                 aria-pressed={isSelected}
               >
-                <div className="relative h-44 w-full shrink-0 overflow-hidden border-b border-border bg-muted sm:h-52">
+                <div className="relative h-52 w-full shrink-0 border-b border-border bg-muted p-2 sm:h-64 sm:p-3">
                   <Image
                     src={option.image}
                     alt={option.label}
                     fill
                     sizes="(max-width: 640px) 100vw, 672px"
-                    className="object-cover"
+                    className="object-contain object-center"
                   />
                 </div>
                 <div className="flex items-start gap-3 p-4">

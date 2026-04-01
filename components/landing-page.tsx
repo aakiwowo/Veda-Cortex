@@ -67,7 +67,7 @@ export function LandingPage() {
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-lg md:aspect-square">
             <Image
-              src="/images/hero-hair.jpg"
+              src="/firstpage.jpg"
               alt="Beautiful natural hair illuminated by warm golden light"
               fill
               className="object-cover"
