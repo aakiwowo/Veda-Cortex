@@ -52,7 +52,7 @@ export const quizQuestions: QuizQuestion[] = [
         value: 'A',
         label: 'Loose / Large',
         description: 'Loose waves, big bouncy curls, or soft coils.',
-        image: '/loose:large.jpg',
+        image: '/loose-large.jpg',
       },
       {
         value: 'B',
